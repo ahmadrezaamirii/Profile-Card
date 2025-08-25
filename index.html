@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile Card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <article class="card" id="card" aria-label="Profile card">
+    <div class="banner" aria-hidden="true"></div>
+
+    <div class="profile">
+      <div class="avatar" id="avatar" title="Profile photo (from local file)">
+        <img id="avatarImg" src="IMG_4208.JPG" alt="Profile photo" />
+        <span id="avatarInitials" aria-hidden="true">AA</span>
+      </div>
+
+      <h1 class="name" id="name">Ahmadreza Amiri</h1>
+      <p class="role" id="role">Front-End Developer • Python</p>
+
+      <div class="chips">
+        <span class="chip">#Python</span>
+        <span class="chip">#HTML</span>
+        <span class="chip">#CSS</span>
+        <span class="chip">#JavaScript</span>
+      </div>
+
+      <p class="bio" id="bio">
+        Front-end developer passionate about building fast and accessible user interfaces. I enjoy component systems, smooth animations, and agile teams. Currently working on scalable web apps.
+        <span class="fade"></span>
+      </p>
+      <button class="toggle-bio" id="toggleBio">Read more…</button>
+
+      <section class="stats" aria-label="Statistics">
+        <div class="stat"><span class="num" id="s1">4</span><span class="label">Projects</span></div>
+        <div class="stat"><span class="num" id="s2">1</span><span class="label">Client</span></div>
+        <div class="stat"><span class="num" id="s3">2 years</span><span class="label">Experience</span></div>
+      </section>
+
+      <div class="actions">
+        <button class="btn primary" id="btnFollow" aria-label="Follow">Follow</button>
+        <button class="btn" id="btnMessage" aria-label="Message"><a href="t.me/ahmadreza_amirii">Message</a></button>
+      </div>
+
+      <div class="links" role="group" aria-label="Social links">
+        <a class="icon-btn" href="https://github.com/ahmadrezaamirii" id="github" title="GitHub" aria-label="GitHub">Git</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/ahmadreza-amiri-46936b1b2/" id="linkedin" title="LinkedIn" aria-label="LinkedIn">In</a>
+        <a class="icon-btn" href="#" id="x" title="X (Twitter)" aria-label="X (Twitter)">X</a>
+        <button class="icon-btn" id="share" title="Share" aria-label="Share">Share</button>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Email</label>
+          <a class="value" id="email" href="mailto:ahmadrezaamiricontact@gmail.com">ahmadrezaamiricontact@gmail.com</a>
+        </div>
+        <button class="copy" id="copyEmail">Copy</button>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Location</label>
+          <div class="value" id="location">Iran</div>
+        </div>
+        <span class="chip" title="Open to remote work">Remote OK</span>
+      </div>
+
+      <div class="footer">
+        <button class="theme-toggle" id="themeToggle">Light</button>
+        <span class="hint"></span>
+      </div>
+    </div>
+  </article>
+
+  <script src="app.js"></script>
+</body>
+</html>
